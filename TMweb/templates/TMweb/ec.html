@@ -1,0 +1,258 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" href="{% static '/images/tm.ico' %}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <title>TM CBIT</title>
+      <style type="text/css">
+         body, html {
+         background-color: #fcfcfc;
+         height: 100%;
+         margin: 0;
+         }
+         .hero-image {
+         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("{% static '/images/tmcbit5.png' %}");
+         height: 85%;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+         }
+         h4,h5
+         {
+         color: white
+         }
+         .navbar
+         {
+         background-color: rgba(0, 0, 0, 0.1)
+         }
+         .dropdown-item
+         {
+            color: grey;
+         }
+         html {
+         box-sizing: border-box;
+         }
+         *, *:before, *:after {
+         box-sizing: inherit;
+         }
+         .column {
+         float: left;
+         width: 16.5%;
+         margin-bottom: 16px;
+         padding: 0 10px;
+         }
+         .card {
+         box-shadow: 2px 15px 25px #003f62;
+         margin: 8px;
+         height: 300px;
+         min-height: 300px;
+         }
+         .about-section {
+         padding: 50px;
+         text-align: center;
+         background-color: #474e5d;
+         color: white;
+         }
+         .container {
+         padding: 0 16px;
+         }
+         .container::after, .row::after {
+         content: "";
+         clear: both;
+         display: table;
+         }
+         .title {
+         color: grey;
+         }
+         .navbar
+         {
+         background-color: rgba(0, 0, 0, 0.1)
+         }
+         h4
+         {
+         color: white
+         }
+
+         .hide {
+		  display: none;
+		}
+
+		.myDIV:hover + .hide {
+		  display: block;
+		  color: red;
+		}
+      </style>
+   <body>
+<nav id="navbar-example2" class="navbar fixed-top ">
+         <a class="navbar-brand text-dark font-weight-bold" href="{% url 'home' %}">
+            <h4>Toastmasters CBIT</h4>
+         </a>
+         <ul class="nav nav-pills">
+            <li class="nav-item">
+               <a href="{% url 'home' %}" class="nav-item nav-link text-light font-weight-bold "><i class="fas fa-info-circle"></i>   About</a>
+            </li>
+            <div class="dropdown">
+              <button class="btn btn-outline-link dropdown-toggle" style="color: white; font-weight: bold; " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-users"></i>  
+                EC
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <a class="dropdown-item" href="#2" type="button">2021 - 2022</a>
+                <a class="dropdown-item" href="#1" type="button">2020 - 2021</a>
+              </div>
+            </div>
+            <li class="nav-item">
+               <a href="{% url 'events' %}" class="nav-item nav-link text-light font-weight-bold"><i class="far fa-calendar-alt"></i>   Events</a>
+            </li>
+            <li class="nav-item">
+               <a href="{% url 'articles' %}" class="nav-item nav-link text-light font-weight-bold"><i class="fas fa-book-open"></i>   Articles</a>
+            </li>
+            <li class="nav-item">
+               <a href="{% url 'home' %}" class="nav-item nav-link text-light font-weight-bold"><i class="fas fa-paper-plane"></i>   Contact Us</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="hero-image"></div>
+      <br>
+      <h1 style="text-align:center">The    <span style="color: #003f62; font-weight: 200; font-weight: bold; font-family: Cambria;">Executive Committee</h1>
+      <br>
+      <br>
+      <h2 id="2" style="padding-left: 23px">2021 - 2022</h2>
+      <div class="row" style="padding-left: 15px">
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/1.jpeg' %}" alt="Jane" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM Bhavishya Agarwal</h2>
+                  <p class="title">President</p>
+                  <br>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/2.jpeg' %}" alt="Mike" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM Fawaz Khan</h2>
+                  <p class="title">Vice President of Education</p>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/3.jpeg' %}" alt="John" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM Siri Desiraju</h2>
+                  <p class="title">Vice President of Membership</p>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/4.jpeg' %}" alt="John" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM Slesha Adi</h2>
+                  <p class="title">Vice President of Public Relation</p>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/5.jpeg' %}" alt="John" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM Annanya Vedala</h2>
+                  <p class="title">Secretary</p>
+                  <br>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/6.jpeg' %}" alt="John" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM Phani Varma</h2>
+                  <p class="title">Treasurer</p>
+                  <br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- 2019 - 2020-->
+      <br>
+      <br>
+      <h2 id="1" style="padding-left: 23px">2020 - 2021</h2>
+      <div class="row" style="padding-left: 15px">
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/ava.png' %}" alt="Jane" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM</h2>
+                  <p class="title">President</p>
+                  <br>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/ava.png' %}" alt="Mike" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM</h2>
+                  <p class="title">Vice President of Education</p>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/ava.png' %}" alt="John" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM</h2>
+                  <p class="title">Vice President of Membership</p>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/ava.png' %}" alt="John" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM</h2>
+                  <p class="title">Vice President of Public Relation</p>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/ava.png' %}" alt="John" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM</h2>
+                  <p class="title">Secretary</p>
+                  <br>
+               </div>
+            </div>
+         </div>
+         <div class="column">
+            <div class="card">
+               <img src="{% static '/images/ava.png' %}" alt="John" style="width:100%">
+               <div class="container">
+                  <h2 style="font-size: 20px; padding-top: 8px">TM</h2>
+                  <p class="title">Treasurer</p>
+                  <br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   </body>
+</html>

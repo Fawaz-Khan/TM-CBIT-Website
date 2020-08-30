@@ -1,0 +1,468 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Fawaz Khan">
+      <link rel="icon" href="{% static '/images/tm.ico' %}">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <title>TM CBIT</title>
+      <style type="text/css">
+         body, html {
+         background-color: white;
+         height: 100%;
+         margin: 0;
+         }
+         .hero-image {
+         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("{% static '/images/tmcbit3.png' %}");
+         height: 85%;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+         }
+         h4
+         {
+         color: white
+         }
+         .navbar
+         {
+         background-color: rgba(0, 0, 0, 0.1);
+         }
+         /* .navbar
+         {
+         background-color: #3F607F;
+         background-image: linear-gradient(295deg, #900C3F 29.8%, #3F607F 10%);
+         }  
+         */    
+         /* 
+         DARKMODE
+         body {
+         background-color: white;
+         color: black;
+         font-size: 25px;
+         }
+         .dark-mode {
+         background-color: black;
+         color: white;
+         }
+         */
+         /*Contatct Us*/
+         .social-menu ul {
+         position: absolute;
+         top: -100%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         padding: 0;
+         margin: 0;
+         display: flex;
+         }
+         .social-menu ul li {
+         list-style: none;
+         margin: 0 15px;
+         }
+         .social-menu ul li .fa {
+         color: #000000;
+         font-size: 30px;
+         line-height: 65px;
+         transition: .3s;
+         }
+         .social-menu ul li .fa:hover {
+         color: #ffffff;
+         }
+         .social-menu ul li a {
+         position: relative;
+         display: block;
+         width: 80px;
+         height: 80px;
+         border-radius: 100%;
+         background-color: white;
+         text-align: center;
+         transition: 0.3s;
+         transform: translate(0, 0px);
+         box-shadow: 0px 9px 5px rgba(114, 82, 255);
+         }
+         .social-menu ul li a:hover {
+         transform: rotate(0deg) skew(0deg) translate(0, -25px);
+         }
+         .social-menu ul li:nth-child(1) a:hover {
+         background-image: linear-gradient(blue 70%, skyblue);
+         }
+         .social-menu ul li:nth-child(2) a:hover {
+         background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+         }
+         .social-menu ul li:nth-child(3) a:hover {
+         background-image: linear-gradient(#707070 65%, purple);
+         }
+         .social-menu ul li:nth-child(4) a:hover {
+         background-image: linear-gradient(red 70%, white);
+         }
+      </style>
+   </head>
+   <body>
+      <nav id="navbar-example2" class="navbar fixed-top ">
+         <a class="navbar-brand text-dark font-weight-bold" href="{% url 'home' %}">
+            <h4>Toastmasters CBIT</h4>
+         </a>
+         <ul class="nav nav-pills">
+            <li class="nav-item">
+               <a href="#a" class="nav-item nav-link text-light font-weight-bold "><i class="fas fa-info-circle"></i>   About</a>
+            </li>
+            <li class="nav-item">
+               <a href="{% url 'ec' %}" class="nav-item nav-link text-light font-weight-bold "><i class="fas fa-users"></i>     EC</a>
+            </li>
+            <li class="nav-item">
+               <a href="{% url 'events' %}" class="nav-item nav-link text-light font-weight-bold"><i class="far fa-calendar-alt"></i>   Events</a>
+            </li>
+            <li class="nav-item">
+               <a href="{% url 'articles' %}" class="nav-item nav-link text-light font-weight-bold"><i class="fas fa-book-open"></i>   Articles</a>
+            </li>
+            <li class="nav-item">
+               <a href="#c" class="nav-item nav-link text-light font-weight-bold"><i class="fas fa-paper-plane"></i>   Contact Us</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="hero-image"></div>
+       <br>
+      <h1 style="text-align:center"><span style="color: #880015; font-weight: 200; font-weight: bold; font-family:  Cambria;"  id="a">About Us</h1>
+      <!--		DARKMODE 
+         <button onclick="myFunction()">Toggle dark mode</button>
+         <script>
+         function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+         }
+         </script>
+         -->
+      <br>
+      <br>
+      <div class="col-xs-12">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link href="/Content/css/Pathways/Overview.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://www.toastmasters.org/Content/css/Navigator/Navigator.css">
+      <style>
+         @media (min-width: 992px) {
+         .col-md-5th-offset-1 {
+         margin-left: 20%;
+         }
+         }
+         .headline-center {
+         font-size: 36px;
+         color: #000;
+         text-align: center;
+         line-height: 40px;
+         margin-top: 10px;
+         margin-bottom: 30px;
+         font-family: 'Lato', sans-serif;
+         }
+         .sub-headline-center {
+         font-size: 18px;
+         color: #333;
+         text-align: center;
+         line-height: 26px;
+         margin-top: 10px;
+         margin-bottom: 30px;
+         margin-right: 40px;
+         margin-left: 40px;
+         font-family: 'Lato', sans-serif;
+         font-weight: 400;
+         }
+         .stats-center {
+         font-size: 40px;
+         color: #000;
+         text-align: center;
+         line-height: 40px;
+         margin-top: 10px;
+         margin-bottom: 30px;
+         font-family: 'Lato', sans-serif;
+         font-weight: 700;
+         }
+         .register-button {
+         display: inline-block;
+         font-family: "Gotham-Medium", "Arial", sans-serif;
+         box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, .12), 2px 4px 4px 0 rgba(0, 0, 0, .24);
+         width: 300px;
+         height: 48px;
+         font-size: 15px;
+         font-weight: 200;
+         font-style: normal;
+         font-stretch: normal;
+         background-color: #772432;
+         border: none;
+         color: white;
+         padding: 8px 8px;
+         text-decoration: none;
+         cursor: pointer;
+         border-radius: 4px;
+         }
+         .register-button:hover {
+         background-color: #6a202c
+         }
+         .benefits {
+         display: block;
+         padding-left: 50px;
+         font-size: 16px;
+         margin: 18px;
+         text-align: left;
+         line-height: normal;
+         }
+         .path-icon {
+         width: 100px;
+         height: 100px;
+         border-radius: 60px;
+         background-color: white;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         }
+         .pathways-skills {
+         font-size: 18px;
+         color: #333;
+         text-align: center;
+         line-height: 26px;
+         font-family: 'Lato', sans-serif;
+         font-weight: 400;
+         width: 80%;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         }
+      </style>
+      <!-- What is Toastmasters? -->
+      <div class="container">
+         <br>
+         <div class="block">
+            <div class="row">
+               <div class="span12" style="text-align: center; padding-top: 10px; 
+                  background: radial-gradient(circle, #f1e8ea, #e3cece, white)">
+                  <img src="{% static '/images/tmcbit.png' %}"  alt="Avatar" style="height:200px;">
+                  <br>
+                  <h1 class="headline-center" style="font-weight: 500;">What is Toastmasters?</h1>
+                  <h3 class="sub-headline-center">Toastmasters International is a nonprofit educational organization
+                     that teaches public speaking and leadership skills through a worldwide network of clubs.
+                     Headquartered in Englewood, Colo., the organization's membership exceeds 358,000 in more than
+                     16,800 clubs in 143 countries. Since 1924, Toastmasters International has helped people from
+                     diverse backgrounds become more confident speakers, communicators, and leaders. 
+                  </h3>
+                  <br>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br>
+      <!-- Break Barriers, Not Your Budget -->
+      <div class="container" style="background: radial-gradient(circle, #f1e8ea, #e3cece, white);">
+         <br>
+         <br>
+         <div class="block">
+            <div class="span12" style="text-align: center; padding: 8px;">
+               <h1 class="headline-center" style="font-weight: 500 text;">Perks of being a Toastmaster</h1>
+               <div>
+                  <div class="row">
+                     <div class="col-md-3 col-sm-6">
+                        <br>
+                        <br>
+                        <img src="{% static '/images/1.svg' %}" alt="Icon of a person practicing their public speaking behind a podium" style="float: left;">
+                        <span class="sub-headline-center benefits">Improve your public speaking skills</span>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <br>
+                        <br>
+                        <img src="{% static '/images/2.svg' %}" alt="Icon of a person running up a line graph" style="float: left;">
+                        <span class="sub-headline-center benefits">Build leadership skills</span>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <br>
+                        <br>
+                        <img src="{% static '/images/3.svg' %}" alt="Icon of a person standing on a podium with confetti falling around them" style="float: left;">
+                        <span class="sub-headline-center benefits">Maximize your potential</span>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <br>
+                        <br>
+                        <img src="{% static '/images/4.svg' %}" alt="Icon of a person building a pyramid" style="float: left; padding-right: 10px; padding-top: 10px;">
+                        <span class="sub-headline-center benefits">Enjoy unlimited personal growth</span>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-3 col-sm-6">
+                        <br>
+                        <br>
+                        <img src="{% static '/images/5.svg' %}" alt="Icon of a person with three small headshots next to them" style="float: left; padding-top: 15px;">
+                        <span class="sub-headline-center benefits">Work on networking in a small and
+                        supportive environment</span>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <br>
+                        <br>
+                        <img src="{% static '/images/6.svg' %}" alt="Icon of a speech resting on a podium" style="float: left; padding-right: 10px; padding-top: 15px;">
+                        <span class="sub-headline-center benefits">Practice writing speeches and presenting in
+                        a group setting</span>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <br>
+                        <br>
+                        <img src="{% static '/images/7.svg' %}" alt="Icon of a person holding up a positive sloping graph" style="float: left; padding-top: 20px;">
+                        <span class="sub-headline-center benefits">Gain a competitive advantage in the
+                        workplace</span>
+                     </div>
+                     <div class="col-md-3 col-sm-6">
+                        <br>
+                        <br>
+                        <img src="{% static '/images/8.svg' %}" alt="Icon of a magnifying glass next to a person" style="float: left; padding-right: 15px;">
+                        <span class="sub-headline-center benefits">Build self-confidence and self-awareness</span>
+                     </div>
+                  </div>
+                  <br>
+                  <br>
+               </div>
+            </div>
+            <br>
+            <br>
+                <br>
+         </div>
+      </div>
+      <br>
+      <!-- How Does Toastmasters Work? -->
+      <div class="container">
+         <div class="block">
+            <div class="row">
+               <div class="span12" style="text-align: center; padding: 8px; background: radial-gradient(circle, #f1e8ea, #e3cece, white">
+               	    <br>
+      <br>
+                  <h1 class="headline-center" style="font-weight: 500;">How Does Toastmasters Work?</h1>
+                  <h3 class="sub-headline-center">Everything in Toastmasters revolves around the club. With a network of
+                     16,800 clubs across 143 countries, you are sure to find one near you! Most clubs have around 20
+                     members and meet once a week for an hour. For a preview of what the club experience is like, watch
+                     this video.
+                  </h3>
+               </div>
+               <div class="col-md-12" style="background: radial-gradient(circle, #f1e8ea, #e3cece, white">
+                  <div class="col-md-7 col-md-5th-offset-1">
+                     <div class="aspect-ratio">
+                        <iframe src="https://www.youtube.com/embed/383gehepo8M" title="The Toastmasters Club Experience"></iframe>
+                     </div>
+                  </div>
+               </div>
+               <br>
+               <br>
+               <div class="col-md-12" style="text-align: center; padding: 8px; background: radial-gradient(circle, #f1e8ea, #e3cece, white">
+                  <br>
+                  <h3 class="sub-headline-center">Each club features a unique culture, so there's no pressure to
+                     join the
+                     first club you visit! Attending club meetings as a guest is free, so visit as many as you like
+                     until you find a club that fits your personality. 
+                  </h3>
+               </div>
+            </div>
+         </div>
+         <br>
+      </div>
+      <!-- What is Pathways? Section -->
+      <div class="container" style="background: radial-gradient(circle, #f1e8ea, #e3cece, white);">
+         <div class="row">
+         	    <br>
+      <br>
+            <br>
+            <br>
+            <div class="span12">
+               <h1 class="headline-center" style="font-weight: 500;">What is Pathways?</h1>
+               <h3 class="sub-headline-center">The Pathways learning experience is Toastmasters' education program.
+                  This
+                  multi-language online learning tool allows you to leverage over 300 practical workplace skills,
+                  including:
+               </h3>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2 col-6">
+               <br>
+               <img class="path-icon" src="{% static '/images/9.svg' %}" alt="Icon of a checklist on a clipboard with a pen next to it">
+               <h5 class="pathways-skills">Interview Preparation</h5>
+            </div>
+            <div class="col-md-2 col-6">
+               <br>
+               <img class="path-icon" src="{% static '/images/10.svg' %}" alt="Icon of a person on a laptop screen with lines connecting to three other people">
+               <h5 class="pathways-skills">Online Meeting Management</h5>
+            </div>
+            <div class="col-md-2 col-6">
+               <br>
+               <img class="path-icon" src="{% static '/images/11.svg' %}" alt="Icon of a person running up a line graph">
+               <h5 class="pathways-skills">Leadership Development</h5>
+            </div>
+            <div class="col-md-2 col-6">
+               <br>
+               <img class="path-icon" src="{% static '/images/12.svg' %}" alt="Icon of a person holding a briefcase with a clock behind them">
+               <h5 class="pathways-skills">Project Management</h5>
+            </div>
+            <div class="col-md-2 col-6">
+               <br>
+               <img class="path-icon" src="{% static '/images/13.svg' %}" alt="Icon of two shaking hands">
+               <h5 class="pathways-skills">Conflict Resolution</h5>
+            </div>
+            <div class="col-md-1"></div>
+         </div>
+         <div class="row">
+            <br>
+         </div>
+         <br>
+             <br>
+      <br>
+      <br>
+      <br>
+      </div>
+      <br>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <br>
+      <br>
+      <footer>
+         <div class="container-fluid text-center" style="background-color: #282828;">
+         <div class="row pt-1">
+            <div class="col-12 py-3">
+               <h2 id="c" ; class="text-light" style="font-family: Cambria;">Contact Us</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-12 col-md-4 py-3">
+            </div>
+            <div class="col-12 col-md-4 text-light py-3 text-center">
+               <p>Feel free to contact us for any queries related to Toastmasters</p>
+               <p style="font-size: 13px"> <img src="{% static '/images/email.png' %}" alt="Avatar" style="width:25px;height:25px;"> (VPE) - fawazzk22@gmail.com</p>
+               <p style="font-size: 13px"> <img src="{% static '/images/email.png' %}" alt="Avatar" style="width:25px;height:25px;"> (VPPR) - slesha.adi@gmail.com</p>
+               <p style="font-size: 13px"> <img src="{% static '/images/email.png' %}" alt="Avatar" style="width:25px;height:25px;"> (Secretary) - annanyaved.07@gmail.com</p>
+            </div>
+         </div>
+         <div>
+            <br>
+         </div>
+         <div>
+            <br>
+            <br>
+            <br>
+         </div>
+         <div class="col-12 py-3">
+            <div class="social-menu">
+               <ul>
+                  <li><a href="https://www.facebook.com/cbittoastmasters"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/tmcbit/"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="https://medium.com/"><i class="fa fa-bookmark"></i></a></li>
+                  <li><a href="https://www.google.com/intl/en-GB/gmail/about/#"><i class="fa fa-envelope"></i></a></li>
+               </ul>
+            </div>
+             <a style="font-size: 13px; color: white;">Facebook | Instagram | Medium | Gmail</a>
+         </div>
+         <footer style="color: #808080">&copy; CBIT Toastmasters Copyright 2020</footer>
+      </footer>
+   </body>
+</html>
